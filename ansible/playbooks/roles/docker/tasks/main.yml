@@ -43,8 +43,3 @@
   - docker-ce
   - docker-compose
 
-- name: Add users to the Docker group
-  user:
-    name: "{{ system_user }}"
-    groups: docker
-    append: yes

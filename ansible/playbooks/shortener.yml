@@ -6,6 +6,5 @@
   become_user: root
 
   roles:
-    - ../roles/docker
-    - ../roles/pygmy
-
+    - { role: docker, tags: "docker" }
+    - { role: pygmy, tags: "pygmy" }
