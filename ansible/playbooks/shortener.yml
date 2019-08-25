@@ -1,0 +1,11 @@
+---
+-
+  hosts: web
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+
+  roles:
+    - ../roles/docker
+    - ../roles/pygmy
+

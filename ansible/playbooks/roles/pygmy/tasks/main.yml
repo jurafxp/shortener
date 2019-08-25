@@ -1,0 +1,10 @@
+- name: git checkout pygmy
+  git:
+    repo: 'https://github.com/amitt001/pygmy.git'
+    dest: /app
+    version: 1.2
+- name: copy pygmy config
+  copy:
+    src: pygmy.conf
+    dest: /app/pygmy/config/pygmy.cfg
+
