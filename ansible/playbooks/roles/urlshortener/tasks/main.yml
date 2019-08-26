@@ -1,0 +1,12 @@
+- name: git checkout best url shortener ever
+  git:
+    repo: 'https://github.com/jurafxp/url-shortener.git'
+    dest: /app
+    version: v0.2
+    force: yes
+- name: Run with docker-compose up
+  docker_compose:
+    project_src: /app
+    build: yes
+    state: present
+
